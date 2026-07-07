@@ -1,0 +1,189 @@
+.recommendations {
+  animation: fadeIn 0.3s ease;
+}
+
+.recommendations h1 {
+  font-size: 1.8rem;
+  color: #1a1a2e;
+  margin-bottom: 4px;
+}
+
+.goal-selector {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.goal-btn {
+  padding: 8px 20px;
+  border-radius: 8px;
+  background: #f0f0f0;
+  color: #555;
+  font-weight: 500;
+  transition: all 0.2s;
+  font-size: 0.9rem;
+}
+
+.goal-btn.active {
+  background: #4CAF50;
+  color: white;
+}
+
+.goal-btn:hover:not(.active) {
+  background: #e0e0e0;
+}
+
+.user-goal-note {
+  background: #e3f2fd;
+  color: #1565c0;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  margin-top: 8px;
+}
+
+.suggestion-badge {
+  font-size: 0.75rem;
+  background: #e8f5e9;
+  color: #2e7d32;
+  padding: 3px 10px;
+  border-radius: 12px;
+  margin-left: 10px;
+  font-weight: 500;
+}
+
+.meal-suggestions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.suggestion-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  background: #f9fafb;
+  border-radius: 10px;
+  transition: background 0.2s;
+}
+
+.suggestion-item:hover {
+  background: #e8f5e9;
+}
+
+.suggestion-number {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #4CAF50;
+  color: white;
+  border-radius: 50%;
+  font-size: 0.85rem;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.suggestion-text {
+  font-weight: 500;
+  color: #333;
+}
+
+.all-meals-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.meal-category {
+  background: #f9fafb;
+  border-radius: 10px;
+  padding: 16px;
+}
+
+.meal-category-title {
+  font-size: 1rem;
+  color: #4CAF50;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #e8f5e9;
+}
+
+.meal-category-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.meal-category-list li {
+  padding: 6px 10px;
+  background: white;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  color: #555;
+  border-left: 3px solid #4CAF50;
+}
+
+.tips-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.tip-card {
+  display: flex;
+  gap: 14px;
+  padding: 16px;
+  background: #f9fafb;
+  border-radius: 10px;
+  align-items: flex-start;
+}
+
+.tip-icon {
+  font-size: 1.8rem;
+  flex-shrink: 0;
+}
+
+.tip-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 4px;
+}
+
+.tip-desc {
+  font-size: 0.85rem;
+  color: #666;
+  line-height: 1.4;
+}
+
+.disclaimer-card {
+  background: #fff8e1;
+  border: 1px solid #ffe082;
+  border-radius: 12px;
+  padding: 16px 20px;
+  color: #6d4c00;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  margin-top: 24px;
+}
+
+@media (max-width: 768px) {
+  .all-meals-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .tips-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  .all-meals-grid {
+    grid-template-columns: 1fr;
+  }
+}

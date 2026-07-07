@@ -1,0 +1,98 @@
+.meal-tracker {
+  animation: fadeIn 0.3s ease;
+}
+
+.meal-tracker h1 {
+  font-size: 1.8rem;
+  color: #1a1a2e;
+  margin-bottom: 4px;
+}
+
+.mini-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.mini-stats .stat-card {
+  padding: 14px;
+}
+
+.mini-stats .stat-value {
+  font-size: 1.2rem;
+}
+
+.meal-count {
+  text-align: center;
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.chart-container {
+  margin-top: 8px;
+}
+
+.daily-meals {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.tracker-meal-item {
+  background: #f9fafb;
+  border-radius: 10px;
+  padding: 14px;
+}
+
+.tracker-meal-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.tracker-meal-type {
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #333;
+}
+
+.tracker-meal-cal {
+  font-weight: 600;
+  color: #4CAF50;
+}
+
+.tracker-meal-foods {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 6px;
+}
+
+.tracker-food-item {
+  background: #e8f5e9;
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  color: #2e7d32;
+}
+
+.tracker-meal-macros {
+  font-size: 0.85rem;
+  color: #888;
+}
+
+.date-picker {
+  max-width: 250px;
+}
+
+.empty-hint {
+  font-size: 0.85rem;
+  margin-top: 4px;
+}
+
+@media (max-width: 600px) {
+  .mini-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
